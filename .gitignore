@@ -1,0 +1,18 @@
+@"
+# deps & build
+node_modules/
+.streamlit/
+
+# data & models (대용량은 Git에 넣지 않음)
+data/**
+*.pkl
+*.joblib
+
+# secrets
+.env
+backend/.env
+
+# OS
+.DS_Store
+Thumbs.db
+"@ | Out-File -Encoding utf8 -FilePath .gitignore
